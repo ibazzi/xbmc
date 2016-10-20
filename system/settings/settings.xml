@@ -132,7 +132,7 @@
       <group id="1">
         <setting id="locale.language" type="addon" label="248" help="36114">
           <level>0</level>
-          <default>resource.language.en_gb</default>
+          <default>resource.language.zh_cn</default>
           <constraints>
             <addontype>kodi.resource.language</addontype>
           </constraints>
