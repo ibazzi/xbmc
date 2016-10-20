@@ -603,3 +603,7 @@ msgstr "系统"
 msgctxt "#31960"
 msgid "RADIO"
 msgstr "电台"
+
+msgctxt "#40000"
+msgid "Android Settings"
+msgstr "Android设置"
