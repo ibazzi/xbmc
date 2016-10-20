@@ -752,11 +752,7 @@ public class Splash extends Activity {
     if (Environment.MEDIA_MOUNTED.equals(Environment.getExternalStorageState()))
       mExternalStorageChecked = true;
 
-    if (XBMCProperties.getBoolProperty("xbmc.waitnetwork"))
-    {
-      if (IsNetworkReady())
-        mNetworkReady = true;
-    } else
+    if (IsNetworkReady())
       mNetworkReady = true;
 
     if (mState != InError && mExternalStorageChecked)
