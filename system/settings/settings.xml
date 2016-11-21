@@ -3277,7 +3277,7 @@
         </setting>
         <setting id="lookandfeel.font" type="string" parent="lookandfeel.skin" label="13303" help="36107">
           <level>1</level>
-          <default>Default</default>
+          <default>Arial</default>
           <constraints>
             <options>skinfonts</options>
           </constraints>
@@ -3320,7 +3320,7 @@
       <group id="1" label="14218">
         <setting id="locale.language" type="addon" label="248" help="36114">
           <level>0</level>
-          <default>resource.language.en_gb</default>
+          <default>resource.language.zh_cn</default>
           <constraints>
             <addontype>kodi.resource.language</addontype>
           </constraints>
@@ -3356,7 +3356,7 @@
       <group id="2" label="14270">
         <setting id="locale.country" type="string" label="14271" help="36115">
           <level>0</level>
-          <default>USA (12h)</default>
+          <default>Beijing (24h)</default>
           <constraints>
             <options>regions</options>
           </constraints>
