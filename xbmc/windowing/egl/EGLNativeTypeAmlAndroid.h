@@ -39,4 +39,9 @@ protected:
   static bool m_isWritable;
 
   bool SetDisplayResolution(const char *resolution);
+
+private:
+  std::string m_su_path;
+
+  bool IsRooted();
 };
