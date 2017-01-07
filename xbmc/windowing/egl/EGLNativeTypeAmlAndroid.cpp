@@ -19,6 +19,7 @@
  */
 
 #include "system.h"
+#include "filesystem/File.h"
 #include <EGL/egl.h>
 #include "EGLNativeTypeAmlAndroid.h"
 #include "utils/log.h"
@@ -38,7 +39,16 @@ bool CEGLNativeTypeAmlAndroid::CheckCompatibility()
     if (SysfsUtils::HasRW("/sys/class/display/mode"))
       m_isWritable = true;
     else
-      CLog::Log(LOGINFO, "AMLEGL: no rw on /sys/class/display/mode");
+    {
+      if(IsRooted())
+      {
+        system((m_su_path + " -c \"chmod 0666 /sys/class/display/mode\"").c_str());
+        m_isWritable = true;
+      }
+      else
+        CLog::Log(LOGINFO, "AMLEGL: no rw on /sys/class/display/mode");
+    }
+    return true;
   }
   return m_isWritable;
 }
@@ -127,5 +137,29 @@ bool CEGLNativeTypeAmlAndroid::SetDisplayResolution(const char *resolution)
   m_curHdmiResolution = resolution;
 
   return true;
+}
+
+bool CEGLNativeTypeAmlAndroid::IsRooted()
+{
+  static const char *su_locations[] = {
+    "/system/bin/su",
+    "/system/xbin/su",
+    "/su/bin/su",
+    "/su/xbin/su",
+    NULL
+  };
+
+  m_su_path = "";
+
+  for (const char **ptr = su_locations; *ptr; ptr++)
+  {
+    if (XFILE::CFile::Exists(*ptr))
+    {
+      CLog::Log(LOGDEBUG,"CEGLNativeTypeAmlAndroid: su found at %s", *ptr);
+      m_su_path = *ptr;
+      return true;
+    }
+  }
+  return false;
 }
 
