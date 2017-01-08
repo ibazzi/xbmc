@@ -30,7 +30,9 @@
   <addon optional="true">screensaver.xbmc.builtin.system</addon>
   <addon>script.module.beautifulsoup4</addon>
   <addon>script.module.pil</addon>
+  <addon>script.module.requests</addon>
   <addon>script.module.simplejson</addon>
+  <addon>service.subtitles.zimuzu</addon>
   <addon>skin.estuary</addon>
   <addon>skin.estouchy</addon>
   <addon>weather.wunderground</addon>
