@@ -809,7 +809,7 @@
       <group id="3" label="14235">
         <setting id="subtitles.languages" type="list[string]" label="24111" help="24112">
           <level>1</level>
-          <default>English</default>
+          <default>Chinese (Simple)</default>
           <constraints>
             <options>subtitledownloadlanguages</options>
             <delimiter>,</delimiter>
@@ -856,7 +856,7 @@
         </setting>
         <setting id="subtitles.tv" type="addon" label="24116" help="24117">
           <level>1</level>
-          <default></default>
+          <default>service.subtitles.zimuku</default>
           <constraints>
             <allowempty>true</allowempty>
             <addontype>xbmc.subtitle.module</addontype>
@@ -867,7 +867,7 @@
         </setting>
         <setting id="subtitles.movie" type="addon" label="24118" help="24119">
           <level>1</level>
-          <default></default>
+          <default>service.subtitles.zimuku</default>
           <constraints>
             <allowempty>true</allowempty>
             <addontype>xbmc.subtitle.module</addontype>
