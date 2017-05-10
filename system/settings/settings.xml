@@ -2153,7 +2153,7 @@
         </setting>
         <setting id="weather.addon" type="addon" label="24029" help="36318">
           <level>0</level>
-          <default></default>
+          <default>weather.wunderground</default>
           <constraints>
             <addontype>xbmc.python.weather</addontype>
             <allowempty>true</allowempty>

@@ -33,6 +33,7 @@
   <addon>script.module.simplejson</addon>
   <addon>skin.estuary</addon>
   <addon>skin.estouchy</addon>
+  <addon>weather.wunderground</addon>
   <addon>webinterface.default</addon>
   <addon>xbmc.addon</addon>
   <addon>xbmc.audioencoder</addon>
