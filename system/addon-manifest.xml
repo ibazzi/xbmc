@@ -32,6 +32,7 @@
   <addon>script.module.pil</addon>
   <addon>script.module.requests</addon>
   <addon>script.module.simplejson</addon>
+  <addon>service.subtitles.zimuku</addon>
   <addon>service.subtitles.zimuzu</addon>
   <addon>skin.estuary</addon>
   <addon>skin.estouchy</addon>

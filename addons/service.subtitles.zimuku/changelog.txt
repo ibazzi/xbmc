@@ -1,0 +1,21 @@
+﻿1.0.6
+- fixed can't get download url
+
+1.0.5
+- fixed get wrong download url
+- get rid of warning about BeautifulSoup
+
+1.0.4
+- add User-Agent in http request to get subtitles
+
+1.0.3
+- fixed can't get subtitles because site changed
+
+1.0.2
+- fixed can't remove temp dir under android
+
+1.0.1
+- support search subtitles for tv shows in library
+
+1.0.0
+- initial
