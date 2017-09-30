@@ -37,6 +37,7 @@ addons/script.module.pil/*
 addons/script.module.pysqlite/*
 addons/script.module.requests/*
 addons/script.module.simplejson/*
+addons/service.subtitles.makedie/*
 addons/service.subtitles.zimuku/*
 addons/service.subtitles.zimuzu/*
 addons/resource.language.en_gb/*
